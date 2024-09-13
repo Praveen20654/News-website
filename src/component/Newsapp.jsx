@@ -19,7 +19,7 @@ const Newsapp = () => {
 
     useEffect(() => {
         getData()
-    }, [])
+    }, )
 
     const handleInput = (e) => {
         console.log(e.target.value);
@@ -37,7 +37,7 @@ const Newsapp = () => {
                     <h1>Trendy News</h1>
                 </div>
                 
-                
+
                 <div className='searchBar'>
                     <input type='text' placeholder='Search News' value={search} onChange={handleInput} />
                     <button onClick={getData}>Search</button>
