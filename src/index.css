@@ -42,10 +42,14 @@ nav button{
   font-size: 16px;
   cursor: pointer;
 }
-nav ul{
+nav ul {
   display: flex;
   gap: 11px;
 
+}
+nav ul li{
+  text-decoration: none;
+ 
 }
 .cardContainer{
   display: flex;
@@ -107,7 +111,7 @@ nav ul{
   font-size: 18px;
   border-radius: 16px;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
   padding: 2px;
 }
 
