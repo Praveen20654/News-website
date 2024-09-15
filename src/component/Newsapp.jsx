@@ -5,7 +5,8 @@ const Newsapp = () => {
     const [search, setSearch] = useState("india");
     const [newsData, setNewsData] = useState(null)
 
-    const API_KEY = "66c9ffc6ee8d41b8b3376696492b60f2";
+    const API_KEY = "66c9ffc6ee8d41b8b3376696492b60f2";         //my api
+    // const API_KEY = "9c3ed8ee95884dec979460a60f96675b";
 
 
     const getData = async () => {
@@ -19,7 +20,7 @@ const Newsapp = () => {
 
     useEffect(() => {
         getData()
-    }, )
+    },)
 
     const handleInput = (e) => {
         console.log(e.target.value);
@@ -36,7 +37,7 @@ const Newsapp = () => {
                 <div>
                     <h1>Trendy News</h1>
                 </div>
-                
+
 
                 <div className='searchBar'>
                     <input type='text' placeholder='Search News' value={search} onChange={handleInput} />
